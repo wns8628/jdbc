@@ -1,6 +1,6 @@
 package com.douzone.jdbc.bookshop.vo;
 
-public class AuthorVo {
+public class AuthorVo {	
    private long no;
    private String name;
    private String bio;

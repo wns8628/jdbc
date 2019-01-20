@@ -19,7 +19,6 @@ public class MainApp {
 		
 		System.out.println("===도서정보출력=====");
 		displayBookInfo();
-
 	}
 	
 	
@@ -34,12 +33,11 @@ public class MainApp {
 	public static void displayBookInfo() {
 		List<BookVo> list = new BookDao().getList();
 		for(BookVo vo:list) {
-			System.out.println("책 제목:"+ vo.getTitle() + 
+			System.out.println( "책 제목:"+ vo.getTitle() + 
 								", 저자:" + vo.getAuthorName() +
 								", 대여 유무:" + vo.getStatus()
 							  );
-		}
+	    }
 	}
-	
 	
 }
