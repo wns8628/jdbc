@@ -11,7 +11,7 @@ public class BookDaoTest {
 		insertTest("이클립스",2);
 		insertTest("브레이킹던",2);
 		
-		getistTest();
+		getlistTest();
 	}
 	
 	public static void insertTest(String title, long authorNo) {
@@ -23,7 +23,7 @@ public class BookDaoTest {
 		new BookDao().insert(vo);
 	}
 	
-	public static void getistTest() {
+	public static void getlistTest() {
 		List<BookVo> list = new BookDao().getList();
 		for(BookVo vo:list) {
 			System.out.println(vo);
